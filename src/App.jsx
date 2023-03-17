@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import githubLogo from "./assets/githubLogo.svg";
 
 function App() {
   const [data, setData] = useState({});
@@ -48,6 +49,7 @@ function App() {
           </div>}
           
       </div>
+          <div className="logo"><a href="https://github.com/viksa7111"><img src={githubLogo} alt="vikas-parmar-github" /></a></div>
     </div>
   )
 }

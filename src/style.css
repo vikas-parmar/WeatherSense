@@ -29,12 +29,14 @@ body{
     z-index: -1;
 }
 .container{
-    max-width: 500px;
-    height: 500px;
+    /* max-width: 500px;
+    height: 500px; */
+    max-width: 70vh;
+    height: 70vh;
     margin: auto;
     padding: 0 1rem;
     background: url("assets/tree.jpg") no-repeat center center/cover;
-    border-radius: 10px;
+    border-radius: 7%;
     box-shadow: 0px 0px 100px #c17914;
     position: relative;
     top: 10%;
@@ -88,4 +90,11 @@ background-color: rgba(205, 224, 32, 0.416);
 
 .bold {
 font-weight: 700;
+}
+.logo{
+    width: 50px;
+    margin: 20px;
+}
+.logo:hover{
+    opacity: 0.7;
 }
