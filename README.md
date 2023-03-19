@@ -16,4 +16,4 @@ npm install
 npm run dev
 ```
  
- ![weather-jaipur](https://user-images.githubusercontent.com/122597785/225861796-18593af3-3bf3-4509-8bc5-0a68c105cac0.jpg)
+ ![weather-vikas](https://user-images.githubusercontent.com/122597785/226186390-75cc2659-946a-48d6-9967-645405dbb700.png)
