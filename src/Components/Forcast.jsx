@@ -6,26 +6,26 @@ const Forcast = () => {
     const [location, setLocation] = useState('');
     const [data, setData] = useState({});
 
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=319de7333d6f77f7ea98d69dbc188698`;
+    const searchcity = (city) => {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city != "[object object]" ? city : location}&units=imperial&appid=319de7333d6f77f7ea98d69dbc188698`)
+            .then(res => res.json())
+            .then(data => setData(data));
+    }
 
     const searchLocation = (e) => {
         if (e.key === 'Enter') {
-            fetch(URL)
-                .then(res => res.json())
-                .then(data => setData(data));
+            searchcity(location);
             setLocation('');
         }
     }
 
     const handleClick = () => {
-        fetch(URL)
-            .then(res => res.json())
-            .then(data => setData(data));
+        searchcity(location);
         setLocation('');
     }
 
     useEffect(() => {
-        searchLocation("Delhi");
+        searchcity("Ahmedabad");
     }, []);
 
     const defaults = {
@@ -34,6 +34,7 @@ const Forcast = () => {
         size: 112,
         animate: true,
     };
+    
     return (
         <div className="forcast">
             <div className="forcast-icon">
@@ -45,7 +46,7 @@ const Forcast = () => {
                 />
             </div>
             <div className="today-weather">
-                <h3>weather</h3>
+                <h3>Weather App</h3>
                 <div className="search-box">
                     <input
                         type="text"
@@ -101,10 +102,9 @@ const Forcast = () => {
                                 </li>
                             </ul>
                         </div>
-                    ) : (typeof data.main === "undefined")?(
-                    <p className='city--heading'>City not found!</p>
-                    ): null
-
+                    ) : (typeof data.main === "undefined") ? (
+                        <p className='city--heading'>City not found!</p>
+                    ) : null
                 }
             </div>
         </div>
