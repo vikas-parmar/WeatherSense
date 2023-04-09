@@ -1,8 +1,10 @@
+import CurrTime from "./Components/CurrTime";
 import Forcast from "./Components/Forcast";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
+      <CurrTime />
       <Forcast />
     </div>
   )

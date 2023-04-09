@@ -70,6 +70,7 @@
 
   .today-weather h3 {
     font-size: 40px;
+    padding-bottom: 8px;
   }
 
   .search-box {
