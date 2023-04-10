@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 let currDate = new Date();
 let currTime = currDate.toLocaleTimeString();
@@ -42,10 +42,12 @@ const Clock = () => {
     const updateTime = () => {
         setTimeNow(new Date().toLocaleTimeString())
     };
-
-    setInterval(() => {
-        updateTime()
-    }, 1000);
+    useEffect(() => {
+        setInterval(() => {
+            updateTime()
+        }, 1000)
+    }, []
+    )
 
     return (
         <>

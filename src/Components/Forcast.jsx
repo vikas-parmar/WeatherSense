@@ -9,19 +9,20 @@ const Forcast = () => {
     const searchcity = (city) => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city != "[object object]" ? city : location}&units=imperial&appid=319de7333d6f77f7ea98d69dbc188698`)
             .then(res => res.json())
-            .then(data => setData(data));
+            .then(data => {
+                setData(data);
+                setLocation("");
+            });
     }
 
     const searchLocation = (e) => {
         if (e.key === 'Enter') {
             searchcity(location);
-            setLocation('');
         }
     }
 
     const handleClick = () => {
         searchcity(location);
-        setLocation('');
     }
 
     useEffect(() => {
@@ -34,7 +35,7 @@ const Forcast = () => {
         size: 112,
         animate: true,
     };
-    
+
     return (
         <div className="forcast">
             <div className="forcast-icon">
