@@ -35,7 +35,7 @@ npm install
 npm run dev
 ```
 #### React Animated Weather
-For react animated component
+> For react animated component
 ```
 npm i react-animated-weather
 ```
