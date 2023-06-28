@@ -1,7 +1,10 @@
 # [Weather App :zap:](https://github.com/vikas-parmar/weather-app/) 
+  
+![screenshot](https://github.com/vikas-parmar/weather-app/assets/122597785/28d1c606-6d48-4728-bb6a-e1e2808ae53c)
 
-## Description
-:pushpin: Weather app is a web application that allows users to check the weather forecast for a specific location. The app is built using React, a popular JavaScript library for building user interfaces, and it utilizes modern web development technologies such as CSS, HTML, and JavaScript.  <br />
+## Description :pushpin:
+Greetings fellow developers! <br />
+This amazing Web Application allows users to check the weather forecast for a specific location. The app is built using React, a popular JavaScript library for building user interfaces, and it utilizes modern web development technologies such as CSS, HTML, and JavaScript. I used openweathermap api for weather forcast. <br />
 
 Users can enter a location in the search bar and the app displays the current weather conditions. The app can also display additional information like wind speed and humidity.
 
@@ -50,6 +53,6 @@ When I improve this repository,
 - I'm going to add one more component. In that component i will add some logic related to current date, user's location name and the forecast for the next few days.
 - I want to improve this App with additional features, like asking users to allow the app to use their device's location for weather forcast.
 
-## Authors
+## Author
 - GitHub: [Vikas Parmar](https://github.com/vikas-parmar)
 - LinkedIn: [Vikas Parmar](https://www.linkedin.com/in/vikas-parmar/)
