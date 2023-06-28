@@ -1,4 +1,4 @@
-# [Weather App :zap:](https://github.com/vikas-parmar/weather-app/) 
+# [WeatherSense | Weather App :zap:](https://github.com/vikas-parmar/WeatherSense/) 
   
 ![screenshot](https://github.com/vikas-parmar/weather-app/assets/122597785/28d1c606-6d48-4728-bb6a-e1e2808ae53c)
 
