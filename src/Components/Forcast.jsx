@@ -31,7 +31,7 @@ const Forcast = () => {
     }, []);
 
     const defaults = {
-        icon: 'CLEAR_DAY',
+        icon: "CLEAR_DAY",
         color: "white",
         size: 112,
         animate: true,
@@ -42,7 +42,7 @@ const Forcast = () => {
             <div className="forcast">
                 <div className="forcast-icon">
                     <ReactAnimatedWeather
-                        icon={defaults.icon}
+                        icon={!data.weather ? defaults.icon : data.weather[0].main.toUpperCase()}
                         color={defaults.color}
                         size={defaults.size}
                         animate={defaults.animate}
