@@ -51,8 +51,8 @@ const Clock = () => {
 
     return (
         <>
-            <p>{dateToday()}</p>
-            <p>{timeNow}</p>
+            <p style={{fontSize: "36px"}}>{timeNow}</p>
+            <p style={{fontSize: "1.6rem"}}>{dateToday()}</p>
         </>
     )
 }

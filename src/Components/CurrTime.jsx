@@ -1,13 +1,29 @@
-import React, { useState } from 'react'
 import Clock from './Clock';
 
-const URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=319de7333d6f77f7ea98d69dbc188698`;
-
-const CurrTime = () => {
+const temp = {
+  fontSize: "6rem",
+  fontFamily: "'Times New Roman', Times, serif",
+  fontWeight: 900,
+  textAlign: "right"
+}
+const CurrTime = ({ data }) => {
   return (
-    <div className='section'>
-      <Clock />
-    </div>
+    <>
+      {
+        data.main ? (
+          <div className='box'>
+            <div style={{ textAlign: "right" }}>
+              <h1>{data.name}, {data.sys.country}</h1>
+              <span style={temp} >
+                {Math.round(data.main.temp)}°F
+              </span>
+            </div>
+            <div>
+              <Clock />
+            </div>
+          </div>) : null
+      }
+    </>
   )
 }
 
