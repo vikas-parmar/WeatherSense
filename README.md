@@ -1,4 +1,4 @@
-# [Weather App :zap:](https://github.com/vikas-parmar/weather-app/) 
+# [WeatherSense | Weather App :zap:](https://github.com/vikas-parmar/WeatherSense/) 
   
 ![screenshot](https://github.com/vikas-parmar/weather-app/assets/122597785/28d1c606-6d48-4728-bb6a-e1e2808ae53c)
 
@@ -9,8 +9,8 @@ This amazing Web Application allows users to check the weather forecast for a sp
 Users can enter a location in the search bar and the app displays the current weather conditions. The app can also display additional information like wind speed and humidity.
 
 ## Links
-- GitHub: [Weather App](https://github.com/vikas-parmar/weather-app/)
-- Live Site: [Weather App](https://react-weather-app-vikas-parmar.vercel.app/)
+- GitHub: [WeatherSense](https://github.com/vikas-parmar/WeatherSense/)
+- Live Site: [Weather App](https://weathersense-dev.vercel.app/)
 
 ## Technologies Used
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
